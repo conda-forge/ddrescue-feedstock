@@ -1,5 +1,5 @@
 context:
-  version: 1.28
+  version: "1.30"
 
 package:
   name: ddrescue
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://ftp.gnu.org/gnu/ddrescue/ddrescue-${{ version }}.tar.lz
-  sha256: 6626c07a7ca1cc1d03cad0958522c5279b156222d32c342e81117cfefaeb10c1
+  sha256: 2264622d309d6c87a1cfc19148292b8859a688e9bc02d4702f5cd4f288745542
   file_name: ddrescue-${{ version }}.tar.lz
 
 build:
