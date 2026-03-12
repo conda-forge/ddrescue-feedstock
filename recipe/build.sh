@@ -9,10 +9,12 @@ cd ${SRC_DIR}/ddrescue-${PKG_VERSION}
     --disable-dependency-tracking \
     --prefix=${PREFIX}
 
+if [[ ${build_platform} == ${target_platform} ]]; then
 make check \
     CXX="${CXX}" \
     CXXFLAGS="${CXXFLAGS}" \
     LDFLAGS="${LDFLAGS}"
+fi
 make install \
     CXX="${CXX}" \
     CXXFLAGS="${CXXFLAGS}" \
